@@ -13,6 +13,8 @@ android {
 
         buildConfigField 'String', 'BASE_URL_TMDB_API', '\"http://api.themoviedb.org\"'
         buildConfigField 'String', 'BASE_URL_TMDB_IMAGE', '\"http://image.tmdb.org/t/p/\"'
+        buildConfigField 'String', 'API_KEY', '\"04817a57f3bfb81719b82e89126b3490\"'
+
     }
     buildTypes {
         release {
@@ -20,12 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildTypes.each {
-        def keystorePropertiesFile = rootProject.file("keystore.properties")
-        def keystoreProperties = new Properties()
-        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-        it.buildConfigField 'String', 'TMDB_API_KEY', keystoreProperties['TMDB_API_KEY']
-    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

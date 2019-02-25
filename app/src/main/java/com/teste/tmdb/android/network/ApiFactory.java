@@ -35,7 +35,7 @@ public class ApiFactory {
                         Request request = chain.request();
                         HttpUrl url = request.url()
                                 .newBuilder()
-                                .addQueryParameter(API_KEY_QUERY_PARAM, BuildConfig.TMDB_API_KEY)
+                                .addQueryParameter(API_KEY_QUERY_PARAM, BuildConfig.API_KEY)
                                 .addQueryParameter(API_LANGUAGE, "pt-BR")
                                 .build();
                         return chain.proceed(request.newBuilder().url(url).build());
