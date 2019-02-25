@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Teste Android</string>
+    <string name="error_load_movies">Não foi possivel carregar a lista</string>
+    <string name="rating">Avaliação</string>
+    <string name="release_date">Data de Lançamento</string>
+    <string name="plot_synopsis">Sinopses</string>
+    <string name="trailers">Trailers</string>
+    <string name="reviews">Reviews</string>
+    <string name="by">By</string>
+    <string name="no_trailers">Não há trailers</string>
+    <string name="no_reviews">Não há Reviews</string>
+    <string name="genre_title">Gêneros</string>
+    <string name="most_popular">Populares</string>
+
+</resources>
